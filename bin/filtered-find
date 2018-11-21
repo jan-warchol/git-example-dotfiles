@@ -32,6 +32,7 @@ command find -L $FIND_SYMLINK_OPTS $FIND_PATHS \
        -o -path '*.git/*' ! -path '*/.git/info' ! -path '*/.git/hooks' -a -type d \
        -o -name 'node_modules' \
        -o -name 'python_modules' \
+       -o -path '*venv*/lib' \
        -o -path '*/deployment/env3' \
        -o -path '*/vendor/cookbooks' \
        -o -path '*/build/mkdocs.venv' \
